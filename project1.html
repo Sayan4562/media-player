@@ -1,44 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>media player</title>
-    <style>
-        header{
-            display: flex;
-            justify-content: space-between;
-        }
-        ul{
-            list-style: none;
-            display: flex;
-        }
-        aside{
-            width: 170px;
-            height: 170px;
-        }
-        .main{
-            display: flex;
-        }
-        li{
-            padding-right: 50px;
-            font-size: 2rem;
-        }
-        img{
-            height: 100px;
-            width: 100%;
-        }
-        hr{
-            margin-left: 50px;
-            margin-right: 70px;
-            color: #000;
-        }
-        .you-video{
-            display: flex;
-            justify-content:space-between;
-        }
-    </style>
 </head>
+
 <body>
     <header>
         <div>
@@ -48,35 +17,57 @@
             <ul>
                 <li>Home</li>
                 <li>About</li>
-                <li>Contect</li>
+                <li>Contact</li>
             </ul>
         </nav>
     </header>
 
-    <div class="main">
+    <div class="aside-content">
         <aside>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure laboriosam maxime iusto. Doloribus repellendus accusamus eligendi. Eius voluptatibus nam odit accusantium quibusdam sint ea saepe fugiat alias totam nihil obcaecati, quisquam quae nisi harum nostrum possimus blanditiis error, sit illo sunt eos, deleniti sapiente. Rerum!
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure laboriosam maxime iusto. Doloribus
+                repellendus accusamus eligendi. Eius voluptatibus nam odit accusantium quibusdam sint ea saepe fugiat
+                alias totam nihil obcaecati, quisquam quae nisi harum nostrum possimus blanditiis error, sit illo sunt
+                eos, deleniti sapiente. Rerum!
             </p>
         </aside>
-        <hr>
-    <main>
-   
-        <div >
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/76ec1a1bkFfOqoVf6e7nae?utm_source=generator&theme=0" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5PvwPy5eRO8BPwpRzCHK3D?utm_source=generator" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <main>
 
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/56zZ48jdyY2oDXHVnwg5Di?utm_source=generator&theme=0" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="song">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/76ec1a1bkFfOqoVf6e7nae?utm_source=generator&theme=0"
+                    width="100%" height="120" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-        </div>
-        <div class="you-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cusC25Adr9I?si=hDIenqotgame75ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/5PvwPy5eRO8BPwpRzCHK3D?utm_source=generator" width="100%"
+                    height="120" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwxRoYzwkyM?si=xr4NGFaEyXLWq1us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </main>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/56zZ48jdyY2oDXHVnwg5Di?utm_source=generator&theme=0"
+                    width="100%" height="120" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+
+            </div>
+            <div class="you-video">
+                <iframe width="100%" height="215" src="https://www.youtube.com/embed/cusC25Adr9I?si=hDIenqotgame75ik"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="100%" height="215" src="https://www.youtube.com/embed/rwxRoYzwkyM?si=xr4NGFaEyXLWq1us"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
     </div>
 
 
 </body>
+
 </html>
