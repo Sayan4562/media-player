@@ -26,7 +26,7 @@ nav {
     width: 100%;
     top: 0;
     background-color: white;
-    box-shadow: 3px 3px 5px rgb(15, 13, 13);
+    box-shadow: 2px 2px 5px rgb(15, 13, 13);
     grid-area: navbar;
 
 }
@@ -37,7 +37,6 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-
 }
 
 nav li {
@@ -51,7 +50,6 @@ nav a {
     text-decoration: none;
     display: flex;
     align-content: center;
-
 }
 
 nav ul img {
@@ -106,8 +104,6 @@ nav li:first-child {
     main {
         flex-direction: column;
     }
-
-
 }
 
 aside {
@@ -127,16 +123,16 @@ main {
     padding: min(30px, 7%) 10px;
     display: flex;
     flex-wrap: wrap;
-
-    /* overflow: hidden; */
-
-
 }
 
 iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+}
+.song{
+    padding: 0 min(5px, 7%);
+}
+.video{
+    padding: 20px;
 }
