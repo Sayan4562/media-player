@@ -1,45 +1,51 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     max-height: 100vh;
     max-width: 100vw;
 }
-body{
+
+body {
     min-height: 100vh;
 
 
-        display: grid;
+    display: grid;
     grid-template-columns: minmax(100px, 300px) 1fr;
     grid-template-rows: auto 1fr;
-    grid-template-areas: 
-    "navbar navbar"
-    "sidebar main";
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar main";
 
 }
-nav{
-        position: sticky;
-            width: 100%;
-        top: 0;
-        background-color: white;
-         box-shadow: 3px 3px 5px rgb(15, 13, 13);
-          grid-area: navbar;
+
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(15, 13, 13);
+    grid-area: navbar;
 
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
-        display: flex;
-        justify-content: flex-end ;
-        align-content: center;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
 
 }
-nav li{
+
+nav li {
     height: 50px;
 
 }
-nav a{
+
+nav a {
     height: 100%;
     padding: 0 1em;
     text-decoration: none;
@@ -47,22 +53,26 @@ nav a{
     align-content: center;
 
 }
-nav ul img{
-    padding: 0;
-}
-li{
-    display: flex;
-}   
 
-nav li:first-child{
-    margin-right:auto;
+nav ul img {
     padding: 0;
-   
 }
-.manu-button{
-        display: block;
-    }
-.nav-sidebar{
+
+li {
+    display: flex;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    padding: 0;
+
+}
+
+.manu-button {
+    display: block;
+}
+
+.nav-sidebar {
     position: fixed;
     right: 0;
     top: 0;
@@ -75,52 +85,58 @@ nav li:first-child{
     width: 300px;
     background-color: white;
 }
- #manu-button{
-        display:none;
-    }
-@media (max-width:800px) {
-    #manu-button{
-        display: block;
-    }
-    .hide-manu{
-        display: none;
-    }
-    .show-manu{
-        display: flex;
-    }
-    main{
-  flex-direction: column;
-    }
 
-    
+#manu-button {
+    display: none;
 }
 
-aside{
-     grid-area: sidebar;
+@media (max-width:800px) {
+    #manu-button {
+        display: block;
+    }
+
+    .hide-manu {
+        display: none;
+    }
+
+    .show-manu {
+        display: flex;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+
+}
+
+aside {
+    grid-area: sidebar;
     position: sticky;
     height: calc(100vh - 50px);
     top: 50px;
     align-self: start;
-    text-align:justify;
-    padding: 0 1em ;
+    text-align: justify;
+    padding: 0 1em;
     z-index: -1;
-      box-shadow: 3px 3px 5px rgb(15, 13, 13);
+    box-shadow: 3px 3px 5px rgb(15, 13, 13);
 }
-main{
+
+main {
     grid-area: main;
- padding:  min(30px,7%) 10px;
+    padding: min(30px, 7%) 10px;
     display: flex;
     flex-wrap: wrap;
-    
+
     /* overflow: hidden; */
-      
+
 
 }
 
-iframe{
+iframe {
     display: flex;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
 
-    
+
 }
